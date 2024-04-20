@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 import { Link } from "react-router-dom";
-import NoRepositoriesPage from "./NoRepositoriesPage"; // Import the JSX page for no repositories found
+import NoRepositoriesPage from "./NoRepositoriesPage";
 
 function Home() {
   const [repos, setRepos] = useState([]);
@@ -20,13 +20,13 @@ function Home() {
       );
       const data = await res.json();
       if (data.length === 0) {
-        setNoRepositories(true); // Set state to indicate no repositories found
+        setNoRepositories(true); // 
       } else {
         setRepos(data);
       }
     } catch (error) {
       console.error("Error fetching repositories:", error);
-      // Handle error here, such as displaying an error message to the user
+     
     }
   };
 
@@ -39,7 +39,7 @@ function Home() {
   return (
     <div className="home">
       {noRepositories ? (
-        <NoRepositoriesPage /> // Render the JSX page for no repositories found
+        <NoRepositoriesPage /> 
       ) : (
         <>
           <h2 className="title">List Of Available Repo</h2>
