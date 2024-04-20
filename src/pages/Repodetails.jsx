@@ -43,9 +43,15 @@ function RepoDetails() {
                 <p>Description: {description ? description : "No description available"}</p> {/* Display description */}
                 <p>Language: {details.language === null ? "none": details.language}</p>
                 
-                <p>Live site: {deployment.length === 0 ? `none` : <a href={`https://github.com/TheFemiOlaniyi?tab=repositories/${details.name}`}>https://github.com/TheFemiOlaniyi?tab=repositories/{details.name}</a>}</p>
+                <p>
+                    Live site: {deployment.length === 0 ? 'none' : (
+                        <a href={`https://github.com/femiemmanuel2024?tab=repositories/${details.name}`}>
+                        https://github.com/femiemmanuel2024?tab=repositories/{details.name}
+                        </a>
+                    )}
+                </p>
 
-                <p><a href={`https://github.com/${details.full_name}`}>Visit Github</a></p>
+                <p  ><a class='visitgit' href={`https://github.com/${details.full_name}`}>Visit Github</a></p>
 
                 <div className="repo-mini-details">
                     <p><FaRegStar className="icons" /> Stars: {details.stargazers_count}</p>

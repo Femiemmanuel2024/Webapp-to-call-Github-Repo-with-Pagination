@@ -102,7 +102,7 @@ section {
     color: #fffeff;
     cursor: pointer;
     margin: 50px auto 60px;
-    background-color: #ff643a;
+    background-color: #1b1c1f;
     padding: 10px 10px;
     border-radius: 20px;
     text-decoration: none;
@@ -110,7 +110,7 @@ section {
 
 .Homebutton:hover {
     text-decoration: none;
-    background-color: #b08cff;
+    background-color: #4a24f5;
 
 }
 
@@ -166,6 +166,7 @@ a:hover {
   
   .no-repositories p {
     margin-bottom: 10px; 
+    background-color: #040613;
   }
   
 
@@ -245,8 +246,20 @@ a:hover {
     margin-bottom: 20px;
 }
 
+.error-page p {
+    background-color: #040613;
+}
+
 .error-status {
     font-size: 5rem;
+}
+
+.visitgit {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #ff643a;
+    padding: 10px;
+    border-radius: 0px 10px 10px 0px ;
 }
 
 @media screen and (max-width: 380px) {
